@@ -61,6 +61,7 @@ spec:
                     - amazonbedrock
                     - cohere
                     - amazonsagemaker
+                    - gemini
                     type: string
                   baseUrl:
                     type: string
