@@ -138,7 +138,7 @@ const (
 	AmazonBedrock   = "amazonbedrock"
 	AmazonSageMaker = "AmazonSageMaker"
 	Cohere          = "cohere"
-	Gemini          = "gemini"
+	Gemini          = "google"
 )
 
 // K8sGPTStatus defines the observed state of K8sGPT
