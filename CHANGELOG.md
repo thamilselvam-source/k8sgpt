@@ -1,5 +1,43 @@
 # Changelog
 
+## [0.1.3](https://github.com/k8sgpt-ai/k8sgpt-operator/compare/v0.1.2...v0.1.3) (2024-04-04)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/onsi/ginkgo/v2 to v2.17.1 ([#384](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/384)) ([9168561](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/916856132989e159545df770024fceb1bc8e9881))
+* **deps:** update module google.golang.org/grpc to v1.63.0 ([#401](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/401)) ([d1b5cbf](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/d1b5cbf517f9e8e5c2fd78088863a93813d9dab0))
+
+
+### Other
+
+* **deps:** update actions/setup-python digest to 82c7e63 ([#387](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/387)) ([ae46b74](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/ae46b74716805ae74fba22616c78d061cc853d5b))
+* **deps:** update anchore/sbom-action action to v0.15.10 ([#388](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/388)) ([a6e6070](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/a6e607006bae0f356e29fc921db3898a7991f9d6))
+* **deps:** update gcr.io/kubebuilder/kube-rbac-proxy docker tag to v0.16.0 ([#396](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/396)) ([8bf0f7a](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/8bf0f7a9664eabe95075d59974df0312f9a7238a))
+* small update to fix linter ([#403](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/403)) ([7078643](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/7078643c0db10d6ad426955a8cfacb7c1c24762c))
+
+## [0.1.2](https://github.com/k8sgpt-ai/k8sgpt-operator/compare/v0.1.1...v0.1.2) (2024-03-28)
+
+
+### Features
+
+* bedrock support ([#389](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/389)) ([796f212](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/796f212a87cd03f147b82fb282fa5cbb6ac38d19))
+* create GrafanaDashboard CR for GrafanaOperator ([#322](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/322)) ([e4391ab](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/e4391abc5fd696bce20222f8d3c7689a56ab2efd))
+
+
+### Bug Fixes
+
+* **deps:** update kubernetes packages to v0.29.3 ([#383](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/383)) ([18702e8](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/18702e8df077d1144f4d8e52ece83d89432a02fc))
+* **deps:** update module github.com/onsi/gomega to v1.32.0 ([#385](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/385)) ([8b0a4bb](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/8b0a4bb14c57251920e6777fd372d5da23030952))
+
+
+### Other
+
+* **deps:** update docker/build-push-action digest to 2cdde99 ([#381](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/381)) ([90dd29d](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/90dd29dcf840b0fec438e1d57ea231efd2fceba0))
+* **deps:** update docker/login-action digest to e92390c ([#377](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/377)) ([9e798f0](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/9e798f0611dacec288d914c6519ca660e58040f0))
+* **deps:** update docker/setup-buildx-action digest to 2b51285 ([#380](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/380)) ([8a2608b](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/8a2608b045a4427940cb17ae90c77833679a3fae))
+* **deps:** update softprops/action-gh-release digest to 9d7c94c ([#376](https://github.com/k8sgpt-ai/k8sgpt-operator/issues/376)) ([14cffb0](https://github.com/k8sgpt-ai/k8sgpt-operator/commit/14cffb06ebaa636b7fda792e5dc3510ed6888529))
+
 ## [0.1.1](https://github.com/k8sgpt-ai/k8sgpt-operator/compare/v0.1.0...v0.1.1) (2024-03-14)
 
 

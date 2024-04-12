@@ -82,10 +82,11 @@ type BackOff struct {
 
 type AISpec struct {
 	// +kubebuilder:default:=openai
-	// +kubebuilder:validation:Enum=openai;localai;azureopenai;amazonbedrock;cohere;amazonsagemaker
+	// +kubebuilder:validation:Enum=openai;localai;azureopenai;amazonbedrock;cohere;amazonsagemaker;gemini
 	Backend string   `json:"backend"`
 	BackOff *BackOff `json:"backOff,omitempty"`
 	BaseUrl string   `json:"baseUrl,omitempty"`
+	Region  string   `json:"region,omitempty"`
 	// +kubebuilder:default:=gpt-3.5-turbo
 	Model   string     `json:"model,omitempty"`
 	Engine  string     `json:"engine,omitempty"`
@@ -137,9 +138,12 @@ const (
 	AmazonBedrock   = "amazonbedrock"
 	AmazonSageMaker = "AmazonSageMaker"
 	Cohere          = "cohere"
+	Gemini          = "gemini"
 )
 
 // K8sGPTStatus defines the observed state of K8sGPT
+// show the current backend used
+// +kubebuilder:printcolumn:name="Backend",type="string",JSONPath=".spec.ai.backend",description="The current backend used"
 type K8sGPTStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file

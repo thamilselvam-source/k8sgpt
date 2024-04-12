@@ -13,6 +13,12 @@ grafanaDashboard:
   label:
     key: grafana_dashboard
     value: "1"
+  # create GrafanaDashboard custom resource referencing to the configMap.
+  # according to https://grafana-operator.github.io/grafana-operator/docs/examples/dashboard_from_configmap/readme/
+  grafanaOperator:
+    enabled: false
+    matchLabels:
+      dashboards: "grafana"
 controllerManager:
   kubeRbacProxy:
     containerSecurityContext:
@@ -22,7 +28,7 @@ controllerManager:
         - ALL
     image:
       repository: gcr.io/kubebuilder/kube-rbac-proxy
-      tag: v0.15.0
+      tag: v0.16.0
     resources:
       limits:
         cpu: 500m
@@ -39,7 +45,7 @@ controllerManager:
         - ALL
     image:
       repository: ghcr.io/k8sgpt-ai/k8sgpt-operator
-      tag: v0.1.1  # x-release-please-version
+      tag: v0.1.3  # x-release-please-version
     resources:
       limits:
         cpu: 500m
