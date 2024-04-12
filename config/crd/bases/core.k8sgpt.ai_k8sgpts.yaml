@@ -61,7 +61,7 @@ spec:
                     - amazonbedrock
                     - cohere
                     - amazonsagemaker
-                    - gemini
+                    - google
                     type: string
                   baseUrl:
                     type: string
